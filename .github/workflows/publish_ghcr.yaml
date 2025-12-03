@@ -19,7 +19,7 @@ jobs:
     strategy:
       matrix:
         # Add your folder names here
-        folder: [jazzy]
+        folder: [jazzy, noetic, humble]
     
     steps:
       - name: Checkout repository

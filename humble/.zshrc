@@ -74,6 +74,6 @@ export NVM_DIR="$HOME/.nvm"
 # Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
 
-source /opt/ros/jazzy/setup.zsh
-eval "$(register-python-argcomplete ros2)"
-eval "$(register-python-argcomplete colcon)"
+source /opt/ros/humble/setup.zsh
+eval "$(register-python-argcomplete3 ros2)"
+eval "$(register-python-argcomplete3 colcon)"

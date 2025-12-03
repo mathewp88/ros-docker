@@ -1,0 +1,21 @@
+services:
+  jazzy:
+    image: ghcr.io/mathewp88/ros-docker/noetic
+    container_name: noetic
+    working_dir: /root/noetic
+    stdin_open: true
+    tty: true
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - __NV_PRIME_RENDER_OFFLOAD=1
+      - __GLX_VENDOR_LIBRARY_NAME=noetic
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${HOME}/.config/nvim:/root/.config/nvim
+      - ${HOME}/M/rosdev/noetic:/root/noetic
+    devices:
+      - "/dev/dri:/dev/dri"
+      - "nvidia.com/gpu=all"
