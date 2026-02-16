@@ -1,10 +1,10 @@
-FROM osrf/ros:humble-simulation
+FROM osrf/ros:noetic-desktop
 
 ENV NVIDIA_DRIVER_CAPABILITIES=all \
     QT_X11_NO_MITSHM=1 \
     DEBIAN_FRONTEND=noninteractive
 
-WORKDIR /root/humble
+WORKDIR /root/noetic
 
 # Install dependencies and tools
 RUN apt update -y && \
