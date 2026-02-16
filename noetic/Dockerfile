@@ -20,7 +20,7 @@ RUN apt update -y && \
         python3-tk \
         python3-pip \
         python3-venv \
-        git libnvidia-gl-580
+        git libnvidia-gl-570
 
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash && \
     export NVM_DIR="$HOME/.nvm" && \
