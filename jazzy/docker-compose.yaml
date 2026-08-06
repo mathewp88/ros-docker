@@ -1,6 +1,6 @@
 services:
   jazzy:
-    image: ghcr.io/mathewp88/ros-docker/jazzy
+    image: ghcr.io/mathaimp/ros-docker/jazzy
     container_name: jazzy
     working_dir: /root/jazzy
     stdin_open: true

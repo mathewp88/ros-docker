@@ -1,6 +1,6 @@
 services:
   jazzy:
-    image: ghcr.io/mathewp88/ros-docker/humble
+    image: ghcr.io/mathaimp/ros-docker/humble
     container_name: humble
     working_dir: /root/humble
     stdin_open: true

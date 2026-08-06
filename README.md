@@ -6,17 +6,17 @@ Personal Docker configurations with extensive modifications based on the [OSRF R
 
 Images are automatically built and published to GitHub Container Registry (GHCR) from the folders in this repository:
 
-- `ghcr.io/mathewp88/ros-docker/jazzy:latest`
-- `ghcr.io/mathewp88/ros-docker/humble:latest`
-- `ghcr.io/mathewp88/ros-docker/noetic:latest`
+- `ghcr.io/mathaimp/ros-docker/jazzy:latest`
+- `ghcr.io/mathaimp/ros-docker/humble:latest`
+- `ghcr.io/mathaimp/ros-docker/noetic:latest`
 
 ## Quick Start
 
 Pull and run an image:
 
 ```bash
-docker pull ghcr.io/mathewp88/ros-docker/jazzy:latest
-docker run -it ghcr.io/mathewp88/ros-docker/jazzy:latest
+docker pull ghcr.io/mathaimp/ros-docker/jazzy:latest
+docker run -it ghcr.io/mathaimp/ros-docker/jazzy:latest
 ```
 
 ## Building Locally
@@ -35,7 +35,7 @@ Here's an example of how to use these images with a minimal Docker Compose:
 ```yaml
 services:
   ros-dev:
-    image: ghcr.io/mathewp88/ros-docker/jazzy:latest
+    image: ghcr.io/mathaimp/ros-docker/jazzy:latest
     container_name: ros-workspace
     stdin_open: true
     tty: true

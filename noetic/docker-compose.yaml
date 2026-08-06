@@ -1,6 +1,6 @@
 services:
   jazzy:
-    image: ghcr.io/mathewp88/ros-docker/noetic
+    image: ghcr.io/mathaimp/ros-docker/noetic
     container_name: noetic
     working_dir: /root/noetic
     stdin_open: true
